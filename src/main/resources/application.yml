@@ -1,0 +1,17 @@
+server:
+  servlet:
+    context-path: /sell
+
+spring:
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.2.103:3306/sell?characterEncoding=utf8&useSSL=false
+
+  # 打印sql
+  jpa:
+    show-sql: true
+logging:
+  file:
+    path: ./
