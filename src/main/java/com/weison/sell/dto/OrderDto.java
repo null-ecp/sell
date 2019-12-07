@@ -1,9 +1,11 @@
 package com.weison.sell.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.weison.sell.Entity.OrderDetial;
 import com.weison.sell.Enums.OrderStatus;
 import com.weison.sell.Enums.PayStatus;
+import com.weison.sell.Serizlieable.Date2LongSerizlieable;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -28,8 +30,10 @@ public class OrderDto {
 
     private Integer payStatus;
 
+    @JsonSerialize(using = Date2LongSerizlieable.class)
     private Date createTime;
 
+    @JsonSerialize(using = Date2LongSerizlieable.class)
     private Date updateTime;
 
     private List<OrderDetial> orderDetialList;

@@ -12,6 +12,10 @@ spring:
   # 打印sql
   jpa:
     show-sql: true
+  # 序列化对象时 ， 忽略为null的属性
+  jackson:
+    default-property-inclusion: non_null
+
 logging:
   file:
     path: ./
