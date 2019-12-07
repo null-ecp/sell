@@ -478,3 +478,76 @@ org.springframework.beans.factory.BeanCreationNotAllowedException: Error creatin
 2019-12-07 20:36:50.856  INFO 10064 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/sell]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-12-07 20:36:50.863  INFO 10064 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2019-12-07 20:36:50.893  INFO 10064 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 30 ms
+2019-12-07 21:13:27.103  INFO 9912 --- [main] com.weison.sell.SellApplication          : Starting SellApplication on DESKTOP-MFCEBR2 with PID 9912 (C:\Users\ad725\IdeaProjects\sell\target\classes started by ad725 in C:\Users\ad725\IdeaProjects\sell)
+2019-12-07 21:13:27.108  INFO 9912 --- [main] com.weison.sell.SellApplication          : No active profile set, falling back to default profiles: default
+2019-12-07 21:13:30.141  INFO 9912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-07 21:13:30.522  INFO 9912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 352ms. Found 4 repository interfaces.
+2019-12-07 21:13:31.324  INFO 9912 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-07 21:13:31.774  INFO 9912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-07 21:13:31.788  INFO 9912 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-07 21:13:31.789  INFO 9912 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-07 21:13:31.992  INFO 9912 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/sell]   : Initializing Spring embedded WebApplicationContext
+2019-12-07 21:13:31.992  INFO 9912 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4763 ms
+2019-12-07 21:13:32.207  INFO 9912 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-07 21:13:32.208  WARN 9912 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-07 21:13:32.432  INFO 9912 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-07 21:13:32.896  INFO 9912 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-07 21:13:33.336  INFO 9912 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-12-07 21:13:33.852  INFO 9912 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-07 21:13:34.033  INFO 9912 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-12-07 21:13:35.426  INFO 9912 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-07 21:13:35.445  INFO 9912 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-07 21:13:36.242  WARN 9912 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-07 21:13:36.465  INFO 9912 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-07 21:13:37.198  INFO 9912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/sell'
+2019-12-07 21:13:37.202  INFO 9912 --- [main] com.weison.sell.SellApplication          : Started SellApplication in 11.44 seconds (JVM running for 14.898)
+2019-12-07 21:16:18.276  INFO 2740 --- [main] com.weison.sell.SellApplication          : Starting SellApplication on DESKTOP-MFCEBR2 with PID 2740 (C:\Users\ad725\IdeaProjects\sell\target\classes started by ad725 in C:\Users\ad725\IdeaProjects\sell)
+2019-12-07 21:16:18.282  INFO 2740 --- [main] com.weison.sell.SellApplication          : No active profile set, falling back to default profiles: default
+2019-12-07 21:16:21.369  INFO 2740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-07 21:16:21.705  INFO 2740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 312ms. Found 4 repository interfaces.
+2019-12-07 21:16:22.363  INFO 2740 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-07 21:16:23.082  INFO 2740 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-07 21:16:23.109  INFO 2740 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-07 21:16:23.114  INFO 2740 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-07 21:16:23.385  INFO 2740 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/sell]   : Initializing Spring embedded WebApplicationContext
+2019-12-07 21:16:23.386  INFO 2740 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4868 ms
+2019-12-07 21:16:23.760  INFO 2740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-07 21:16:23.768  WARN 2740 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-07 21:16:24.143  INFO 2740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-07 21:16:24.347  INFO 2740 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-07 21:16:24.629  INFO 2740 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-12-07 21:16:24.902  INFO 2740 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-07 21:16:25.184  INFO 2740 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-12-07 21:16:26.692  INFO 2740 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-07 21:16:26.718  INFO 2740 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-07 21:16:27.921  WARN 2740 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-07 21:16:28.191  INFO 2740 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-07 21:16:28.724  INFO 2740 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/sell'
+2019-12-07 21:16:28.729  INFO 2740 --- [main] com.weison.sell.SellApplication          : Started SellApplication in 11.586 seconds (JVM running for 14.045)
+2019-12-07 21:18:09.069  INFO 10208 --- [main] com.weison.sell.SellApplication          : Starting SellApplication on DESKTOP-MFCEBR2 with PID 10208 (C:\Users\ad725\IdeaProjects\sell\target\classes started by ad725 in C:\Users\ad725\IdeaProjects\sell)
+2019-12-07 21:18:09.079  INFO 10208 --- [main] com.weison.sell.SellApplication          : No active profile set, falling back to default profiles: default
+2019-12-07 21:18:11.081  INFO 10208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-07 21:18:11.283  INFO 10208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 181ms. Found 4 repository interfaces.
+2019-12-07 21:18:11.875  INFO 10208 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-07 21:18:12.344  INFO 10208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-07 21:18:12.361  INFO 10208 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-07 21:18:12.363  INFO 10208 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-12-07 21:18:12.563  INFO 10208 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/sell]   : Initializing Spring embedded WebApplicationContext
+2019-12-07 21:18:12.563  INFO 10208 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3187 ms
+2019-12-07 21:18:12.826  INFO 10208 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-07 21:18:12.828  WARN 10208 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-07 21:18:13.032  INFO 10208 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-07 21:18:13.117  INFO 10208 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-07 21:18:13.409  INFO 10208 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2019-12-07 21:18:13.646  INFO 10208 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-07 21:18:13.869  INFO 10208 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-12-07 21:18:15.282  INFO 10208 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-07 21:18:15.300  INFO 10208 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-07 21:18:16.222  WARN 10208 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-07 21:18:16.505  INFO 10208 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-07 21:18:17.013  INFO 10208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/sell'
+2019-12-07 21:18:17.020  INFO 10208 --- [main] com.weison.sell.SellApplication          : Started SellApplication in 9.552 seconds (JVM running for 12.209)
+2019-12-07 21:19:50.465  INFO 10208 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/sell]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-07 21:19:50.469  INFO 10208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-07 21:19:50.488  INFO 10208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2019-12-07 21:20:33.040  WARN 10208 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]

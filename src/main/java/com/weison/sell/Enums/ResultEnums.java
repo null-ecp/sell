@@ -12,7 +12,8 @@ public enum ResultEnums {
     ORDER_PAY_STATUS_ERROR(7, "订单支付状态异常"),
     ORDER_FINISHED_ERROR(8, "取消订单失败"),
     ORDER_CREATE_ERROR(9, "订单创建失败"),
-    ORDER_PARAM_ERROR(10, "订单参数不正确");
+    ORDER_PARAM_ERROR(10, "订单参数不正确"),
+    ORDER_OPENID_EQ_ERROR_ORDERID(11, "订单与用户不匹配");
 
     private Integer code;
 

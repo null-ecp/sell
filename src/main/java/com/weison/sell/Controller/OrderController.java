@@ -4,6 +4,7 @@ import com.weison.sell.Conveter.OrderPojo2OrderDto;
 import com.weison.sell.Enums.ResultEnums;
 import com.weison.sell.Exception.SellException;
 import com.weison.sell.Pojo.OrderPojo;
+import com.weison.sell.Services.BuyyerService;
 import com.weison.sell.Services.OrderService;
 import com.weison.sell.Utils.ResultUtil;
 import com.weison.sell.VO.ResultVO;
@@ -29,6 +30,9 @@ public class OrderController {
 
     @Autowired
     private OrderService orderService;
+
+    @Autowired
+    private BuyyerService buyyerService;
 
     /**
      * 创建订单
@@ -78,8 +82,31 @@ public class OrderController {
         return ResultUtil.success(orderDtos.getContent());
     }
 
-    @GetMapping("/detial")
-    public ResultVO<OrderDto> getOrderDetial(){
-        return null;
+    @GetMapping("/detail")
+    public ResultVO<OrderDto> getOrderDetial(@RequestParam String openid,
+                                             @RequestParam String orderId){
+        // 判断用户是否存在
+        if (StringUtils.isEmpty(openid) || StringUtils.isEmpty(orderId)) {
+            log.error("[订单信息] 订单参数不正确 openid = {}, orderid = {}", openid, orderId);
+            throw new SellException(ResultEnums.ORDER_PARAM_ERROR);
+        }
+
+        OrderDto orderDto = buyyerService.findByOrderid(openid, orderId);
+        return ResultUtil.success(orderDto);
+    }
+
+    @PostMapping("/cancel")
+    public ResultVO CanelOrder(@RequestParam String openid,
+                               @RequestParam String orderId){
+
+        // 判断用户是否存在
+        if (StringUtils.isEmpty(openid) || StringUtils.isEmpty(orderId)) {
+            log.error("[订单信息] 订单参数不正确 openid = {}, orderid = {}", openid, orderId);
+            throw new SellException(ResultEnums.ORDER_PARAM_ERROR);
+        }
+
+        buyyerService.canelorder(openid, orderId);
+
+        return ResultUtil.success();
     }
 }
