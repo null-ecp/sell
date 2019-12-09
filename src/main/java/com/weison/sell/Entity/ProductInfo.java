@@ -19,17 +19,14 @@ public class ProductInfo {
     private String productName;
 
     private BigDecimal productPrice;
-
     // 库存
     private Integer productStock;
 
     private String productDesc;
 
     private String productImg;
-
     // 分类编号
     private Integer categoryType;
-
     // 商品状态
     private Integer productStatus;
 
