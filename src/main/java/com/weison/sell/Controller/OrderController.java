@@ -82,6 +82,12 @@ public class OrderController {
         return ResultUtil.success(orderDtos.getContent());
     }
 
+    /**
+     * 获取订单详情
+     * @param openid
+     * @param orderId
+     * @return
+     */
     @GetMapping("/detail")
     public ResultVO<OrderDto> getOrderDetial(@RequestParam String openid,
                                              @RequestParam String orderId){
@@ -95,6 +101,12 @@ public class OrderController {
         return ResultUtil.success(orderDto);
     }
 
+    /**
+     * 删除指定订单
+     * @param openid
+     * @param orderId
+     * @return
+     */
     @PostMapping("/cancel")
     public ResultVO CanelOrder(@RequestParam String openid,
                                @RequestParam String orderId){
